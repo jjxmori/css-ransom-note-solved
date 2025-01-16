@@ -51,7 +51,55 @@ body {
   transition: all 0.8s ease-in-out;
 }
 
+.word span:nth-child(2), .word span:nth-child(4), .word span:nth-child(8){
+  font-family: 'Piazolla', sans-serif;
+  font: 700;
+  font-size: 48px;
+  font-family: 'Ceviche One', sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.word span:nth-child(1), .word span:nth-child(5), .word span:nth-child(9){
+  font: bold;
+  font-size: 28px;
+  font-family: 'Raleway Dots', sans-serif;
+  text-decoration: overline;
+  text-transform: uppercase;
+}
+.word span:nth-child(7){
+  font: 400;
+  font-size: 60px;
+  font-family: 'Raleway Dots', sans-serif;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
 /* Sample CSS for the WHY word */
+.word .borderLightGreen{
+  border: 10px dotted rgb(144, 238, 144);
+  background-color: rgb(99, 42, 52);
+}
+.word .borderRed{
+  border-color: rgb(255, 0, 0);
+  background-color: rgb(226, 164, 245);
+}
+.word .borderOrange{
+  border: 10px double rgb(251, 221, 166);
+  background-color: rgb(0, 255, 255);
+  color: rgb(36, 63, 36);
+}
+.word .borderBlue{
+  border-color: rgb(59, 59, 224);
+  background-color: rgb(231, 250, 250);
+  color: rgb(103, 16, 185);
+}
+.word .borderPink{
+  border-color: rgb(255, 192, 203);
+  background-color: purple;
+}
+.colorRed{
+  color: #ff0000;
+}
 
 .whyWLetter {
   font-size: 72px;
@@ -80,49 +128,77 @@ body {
   font-family: 'Raleway Dots', sans-serif;
 }
 
+
+
 /* DID word */
 
-.didDLetter {
+.word .didDLetter {
+  border-color: #00ffff;
+  color: #080806;
+  font-family: "Raleway Dots", sans-serif;
+  background-color: rgb(240, 154, 42);
+  font-weight: 700;
 }
 
 .didILetter {
+  color: #00ffff;
 }
 
 .didDTwoLetter {
+  color: #080806;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* THE word */
 
 .theTLetter {
+  font-size: 40px;
 }
 
 .theHLetter {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .theELetter {
+  font-size: 28px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* FRONT-END word */
 
 .frontendFLetter {
+  color: #ff0000;
 }
 
-.frontendRLetter {
+.word .frontendRLetter {
+  border-color: #6b8e23;
+  background-color: #7fffd4;
+  color: #282a56;
 }
 
 .frontendOLetter {
+  color: #ff0000;
 }
 
-.frontendNLetter {
+.word .frontendNLetter {
+  color: #00ffff;
+  background-color: #5b5e96;
 }
 
 .frontendTLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .frontendELetter {
 }
 
 .frontendNTwoLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .frontendDLetter {
@@ -131,18 +207,27 @@ body {
 /* DEVELOPER word */
 
 .developerDLetter {
+  color: #7fffd4;
 }
 .developerELetter {
+  color: #ff0000;
 }
 .developerVLetter {
 }
-.developerETwoLetter {
+.word .developerETwoLetter {
+  border-color: rgb(43, 255, 0);
+  background-color: #6b8e23;
 }
 .developerLLetter {
 }
 .developerOLetter {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 .developerPLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .developerEThreeLetter {
 }
@@ -153,37 +238,64 @@ body {
 
 .takeTLetter {
 }
-.takeALetter {
+.word .takeALetter {
+  border-color: #f0f8ff;
+  color: #f9f2ea;
+  background-color: #ff8c00;
 }
 .takeKLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .takeELetter {
+  border-color: #7fffd4;
+  background-color: #e3bd8e;
+  color: #663399;
+
 }
 
 /* UP word */
 
 .upULetter {
+  border-radius: 10px;
+  border-color: #adff2f;
+  background-color: #ffc0cb;
 }
 .upPLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* GARDENING word */
 
 .gardeningGLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .gardeningALetter {
+  background-color: #00ff6a;
 }
 .gardeningRLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .gardeningDLetter {
 }
-.gardeningELetter {
+.word .gardeningELetter {
+  background-color: #080806;
+  border-color: #adff2f;
+  color: #00ffff;
 }
 .gardeningNLetter {
 }
-.gardeningILetter {
+.word .gardeningILetter {
+  background-color: #f9f905;
+  border-color: #2fffee;
+  color: #00ff37;
 }
 .gardeningNTwoLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .gardeningGTwoLetter {
 }
@@ -192,13 +304,18 @@ body {
 
 .becauseBLetter {
 }
-.becauseELetter {
+.word .becauseELetter {
+  border-color: #e3bd8e;
+  color: #00ffff;
 }
 .becauseCLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .becauseALetter {
 }
 .becauseULetter {
+  background-color: #66fc20;
 }
 .becauseSLetter {
 }
@@ -208,10 +325,15 @@ body {
 /* THEY word */
 
 .theyTLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .theyHLetter {
 }
-.theyELetter {
+.word .theyELetter {
+  border-color: #080806;
+  background-color: #00ff37;
+  color: #080806;
 }
 .theyYLetter {
 }
@@ -220,85 +342,141 @@ body {
 
 .wantedWLetter {
 }
-.wantedALetter {
+.word .wantedALetter {
+background-color: #f0f8ff;
+color: #00ff37;
 }
 .wantedNLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.wantedTLetter {
+.word .wantedTLetter {
+  background-color: #f0f8ff;
+  border-color: #2fffee;
+  color: #00ff37;
 }
 .wantedELetter {
 }
 .wantedDLetter {
+  background-color: #ffc0cb;
 }
 
 /* TO word */
 
 .toTLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.toOLetter {
+.word .toOLetter {
+background-color: #f0f8ff;
+border-color: rgb(59, 125, 88);
+color: #00ff37;
 }
 
 /* IMPROVE word */
 
-.improveILetter {
+.word .improveILetter {
+  border-color: #00ff37;
+  background-color: #00ffff;
+  color: #080806;
 }
 .improveMLetter {
 }
 .improvePLetter {
 }
 .improveRLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .improveOLetter {
 }
 .improveVLetter {
 }
 .improveELetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* THEIR word */
 
 .theirTLetter {
 }
-.theirHLetter {
+.word .theirHLetter {
+  border-color: #d27b17;
+  background-color: #ff00fb;
+  color: #e0e00a;
 }
-.theirELetter {
+.word .theirELetter {
+  border-color: #94a899;
+  background-color: #9bfdfd;
+  color: #080806;
 }
 .theirILetter {
 }
-.theirRLetter {
+.word .theirRLetter {
+  border-color: #eeff00;
+  background-color: #b1bcbc;
+  color: #555502;
 }
 
 /* ROOT word */
 
-.rootRLetter {
+.word .rootRLetter {
+  border-color: #00ff1a;
+  background-color: #b1bcbc;
+  color: #f901f9;
 }
 .rootOLetter {
 }
-.rootOTwoLetter {
+.word .rootOTwoLetter {
+  border-color: #00ffd5;
+  background-color: #f55f85;
+  color: #ffff06;
 }
-.rootTLetter {
+.word .rootTLetter {
+  border-color: #00ff6a;
+  background-color: #3a3f3c;
+  color: #05d264;
 }
 
 /* SKILLS word */
 
 .skillsSLetter {
 }
-.skillsKLetter {
+.word .skillsKLetter {
+  color: #ffc0cb;
+  border-color: #00ff37;
+  background-color: #080806;
 }
 .skillsILetter {
 }
 .skillsLLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .skillsLTwoLetter {
 }
 .skillsSTwoLetter {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* SYMBOLS */
 
-.hyphen {
+.word .hyphen {
+  color: #f50c33;
+  border-color: #f2ff00;
+  background-color: #080806;
 }
-.exclamation-mark {
+.word .exclamation-mark {
+  color: #01675f;
+  border-color: #bbff00;
+  background-color: #080806;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.question-mark {
+.word .question-mark {
+  color: #d900ff;
+  border-color: #008cff;
+  background-color: #f3fbb8;
 }
